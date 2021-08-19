@@ -11,6 +11,8 @@
 
 ### [Linux](dotnet-help-Linux-Home)
 
+### [ARM64](dotnet-help-ARM64)
+
 ### [Windows](dotnet-help-Windows.md)
 
 ### [MacOS](dotnet-help-MacOS.md)
