@@ -31,7 +31,7 @@ server
     ssl_certificate    /var/www/cert/e5.leeskyler.top.pem;
     ssl_certificate_key    /var/www/key/e5.leesyler.top.key;
     ssl_ciphers EECDH+CHACHA20:EECDH+CHACHA20-draft:EECDH+AES128:RSA+AES128:EECDH+AES256:RSA+AES256:EECDH+3DES:RSA+3DES:!MD5;
-    ssl_prefer_server_ciphers on
+    ssl_prefer_server_ciphers on;
     ssl_session_cache shared:SSL:10m;
     ssl_session_timeout 10m;
     add_header Strict-Transport-Security "max-age=31536000";
