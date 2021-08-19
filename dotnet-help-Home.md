@@ -11,7 +11,7 @@
 
 ### [Linux](dotnet-help-Linux-Home)
 
-### [ARM64及其他架构、其他Linux安装方式](dotnet-help-ARM64)
+### [ARM64及其他架构、Linux其他安装方式](dotnet-help-ARM64)
 
 ### [Windows](dotnet-help-Windows.md)
 
