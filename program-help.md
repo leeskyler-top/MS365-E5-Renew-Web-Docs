@@ -13,6 +13,14 @@
 
 - 管理员只有一名
 
+- 登录管理员->用户列表->为管理员输入OAuth登录关联账户
+
+· GitHub的OAuth ID获取API
+~~~
+https://api.github.com/users/你的昵称
+~~~
+输入GitHub-返回的id后面的数字
+
 ### 二、用户管理
 
 - 账户配额 就是 该账户可调用账户数
