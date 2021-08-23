@@ -2,6 +2,8 @@
 
 ##### Renew Web & Renew X 采用kerstrel 需要pfx证书，均需要放在Deploy下面。
 
+##### 本页面为有效签名证书或自定义证书设置，如需使用系统自签证书，请查看[Config配置](Confog-help)
+
 pem公钥 key私钥 (crt证书)
 
 #### 服务器内需要有openssl
