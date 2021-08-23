@@ -26,6 +26,8 @@
 
   - [管理员功能简介](program-help.md)
 
-  - [C#常用转义符](CSharpSymbol.md)
-
   - [更新与数据备份警示](update_and_backup-help.md)
+
+- 关于
+
+ - [关于](About.md)
