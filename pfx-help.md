@@ -1,8 +1,8 @@
 # pem公钥 key私钥 (crt证书)转换pfx
 
-##### Renew Web & Renew X 采用kerstrel 需要pfx证书，均需要放在Deploy下面。
+##### Renew Web & Renew X 采用kerstrel 需要pfx证书，使用 有效签名证书 或 自定义证书 均需要将 pfx证书 放在 Deploy 目录下面。在Config文件中相应位置进行填写。
 
-##### 本页面为有效签名证书或自定义证书设置，如需使用系统自签证书，请查看[Config配置](Confog-help)
+##### 本页面为有效签名证书或自定义证书设置，如您只是使用系统自签证书则无需查看此页面。
 
 pem公钥 key私钥 (crt证书)
 
