@@ -1,4 +1,4 @@
-# Microsoft365 E5 Developer Renew 系列帮助文档 - 首页
+# MS365 E5 Renew 系列帮助文档 - 首页
 本文档没有其他语言，只有简体中文。
 
 本文檔沒有其他語言，只有簡體中文。
@@ -24,9 +24,9 @@ Dieses Dokument hat keine anderen Sprachen, nur vereinfachtes Chinesisch.
 
 #### 使用常见问题
 
-- [Microsoft365 E5Developer Renew系列通用 常见问题](Questions)
+- [MS365 E5 Renew系列通用 常见问题](Questions)
 
-- [Microsoft365 E5Developer Renew X & Web常见问题](Renew_Web-Questions)
+- [MS365 E5 Renew X & Web常见问题](Renew_Web-Questions)
 
 #### 部署文档
 - [dotnet3.1安装](dotnet-help-Home) | [systemd守护进程](systemd-help-Home) | [OAuth应用注册](App-registrations-help-Home) | [Config配置](Config-help) | [证书问题](pfx-help) | [Nginx反向代理](Nginx-help)
