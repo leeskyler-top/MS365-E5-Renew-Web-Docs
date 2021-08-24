@@ -7,7 +7,7 @@
 
 检查服务器端口、安全组是否放行，检查程序是否正常运作。
 
-是否用错协议比如https却使用http访问
+是否用错协议比如https却使用http访问。
 
 如果ufw、firewall-cmd等不起作用，请你尝试iptables，呢俩玩意有时会抽风。
 
@@ -19,23 +19,23 @@
 
 ### Cloudflare 400 502 520 521 525
 
-检查SSL设置是否正确
+检查SSL设置是否正确。
 
-服务器与Cloudflare通讯是否正常
+服务器与Cloudflare通讯是否正常。
 
-检查端口是否正确，如果非标端口请确保是支持的回源端口
+检查端口是否正确，如果非标端口请确保是支持的回源端口。
 
-是否用错协议比如https却使用http访问
+是否用错协议比如https却使用http访问。
 
-检查Nginx配置是否正常
+检查Nginx配置是否正常。
 
 检查程序是否正常开启。
 
-检查服务器端口、安全组是否正确放行。服务器尝试使用iptables再次放行
+检查服务器端口、安全组是否正确放行。服务器尝试使用iptables再次放行相应端口。
 
 ### Cloudflare 523 Web Server Down 、 Unknown Error
 
-检查程序是否正常运行
+检查程序是否正常运行。
 
 如果使用了Nginx反向代理，检查配置是否正确。
 
@@ -50,7 +50,7 @@
 
 ### 微软OAuth登录时出现 invalid_request: The provided value for the input parameter 'redirect_uri' is not valid. The expected value is a URI which matches a redirect URI registered for this client application.
 
-检查应用注册时是否正确填写了Web的Redirect URIs，Platform是否为Web
+检查应用注册时是否正确填写了Web的Redirect URIs，Platform是否为Web.
 
 ### 微软OAuth登录时出现 unauthorized_client: The client does not exist or is not enabled for consumers. If you are the application developer, configure a new application through the App Registrations in the Azure Portal at https://go.microsoft.com/fwlink/?linkid=2083908.
 
@@ -68,17 +68,17 @@
 
 ### GitHub OAuth登录时出现浏览器HTTP 404 503 或 took too long to respond.
 
-检查OAuth应用 Authorization callback URL是否填写正确
+检查OAuth应用 Authorization callback URL是否填写正确。
 
 检查客户端与GitHub通讯是否正常，如不正常请尝试使用代理。
 
 ### GitHub OAuth登录时出现GitHub界面的404
 
-检查Config.xml 或 Config.json 是否正确填写GitHub 处的 clientid
+检查Config.xml 或 Config.json 是否正确填写GitHub 处的 clientid.
 
 ### GitHub OAuth登录时出现浏览器HTTP 500
 
-检查Config.xml 或 Config.json 是否正确填写GitHub 处的 SecretKey
+检查Config.xml 或 Config.json 是否正确填写GitHub 处的 SecretKey.
 
 ### GitHub OAuth登录时出现HTTP 500
 
@@ -95,7 +95,7 @@
 
 ### 后端Error: Kerstrel failed to load the "" SSL certificate.
 
-如果你确实需要使用Dev SSL，又出现此报错，我希望你能够尝试运行
+如果你确实需要使用Dev SSL，又出现此报错，我希望你能够尝试运行。
 ~~~
 dotnet dev-certs https --trust
 ~~~
@@ -113,25 +113,27 @@ dotnet dev-certs https --trust
 
 ### 邮件收不到
 
-如果是本地邮局、自建邮局，检查相应端口是否开启，并尝试使用iptables再次尝试放行端口。
+如果是本地邮局、自建邮局，检查相应端口是否开启，并尝试使用iptables再次尝试放行SMTP端口。
 
-部分 自定义域名 托管邮局 请检查DKIM DMARC （自建邮局必须检查rDNS/PTR）记录是否正确配置，否则会被对方邮局拦截
+如果是本地邮局、自建邮局，检查dovecot、postfix等程序是否正常运行和配置。
+
+部分 自定义域名 托管邮局 请检查DKIM DMARC （自建邮局必须检查rDNS/PTR）记录是否正确配置，否则会被对方邮局拦截。
 
 （部分自定义域名托管邮局不支持设置DKIM DMARC，您可以考虑更换邮局，另外大部分自定义域名托管邮局不支持设置 rDNS/PTR 如微软，您无需检查rDNS/PTR记录。）
 
-检查邮件是否被拦截或邮局限制发送（邮局限制发送如微软A1邮局可能存在过度发信导致邮局禁止发信的问题，你需要发起工单协助）
+检查邮件是否被拦截或邮局限制发送（邮局限制发送如微软A1邮局可能存在过度发信导致邮局禁止发信的问题，你需要发起工单协助）。
 
 检查账户、密码、SMTP地址是否正确，部分邮局需要使用专用密码。
 
-使用telnet检查SMTP地址的25或465或587端口是否正常
+使用telnet检查SMTP地址的25或465或587端口是否正常。
 
-非标端口不受程序支持
+非标端口不受程序支持。
 
-检查邮局是否放行SMTP
+检查邮局是否放行SMTP。
 
 ### 如果你排除了上述问题，但问题仍然存在
 
-请检查是否已重启程序
+请检查是否已重启程序。
 
 
 
