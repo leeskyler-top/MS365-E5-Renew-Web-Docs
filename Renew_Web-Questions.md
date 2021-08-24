@@ -1,5 +1,8 @@
 # Renew Web或Renew X部署注意事项
 
+
+## 访问类问题
+
 ### took too long to respond.
 
 检查服务器端口、安全组是否放行，检查程序是否正常运作。
@@ -30,9 +33,61 @@
 
 检查服务器端口、安全组是否正确放行。
 
+### Cloudflare 523 Web Server Down 、 Unknown Error
+
+检查程序是否正常运行
+
+如果使用了Nginx反向代理，检查配置是否正确。
+
+检查访问端口是否受Cloudflare支持。
+
 ### 请慎重启用Cookie缓存类功能
 
 这可能造成用户登录错乱 甚至是信息泄漏 信息遭到破坏。
+
+
+## OAuth类问题
+
+### 微软OAuth登录时出现 invalid_request: The provided value for the input parameter 'redirect_uri' is not valid. The expected value is a URI which matches a redirect URI registered for this client application.
+
+检查应用注册时是否正确填写了Web的Redirect URIs，Platform是否为Web
+
+### 微软OAuth登录时出现 unauthorized_client: The client does not exist or is not enabled for consumers. If you are the application developer, configure a new application through the App Registrations in the Azure Portal at https://go.microsoft.com/fwlink/?linkid=2083908.
+
+检查Config.xml或Config.json是否正确填写Microsoft 处的 Clientid.
+
+### 微软OAuth登录后出现HTTP 500
+
+检查Config.xml或Config.json是否正确填写Microsoft 处的 Clientid.
+
+### 微软OAuth登录时出现HTTP 500
+
+检查Config.xml是否开启了Microsoft OAuth.
+
+值为false关闭，为true开启，检查拼写是否正确。
+
+### GitHub OAuth登录时出现浏览器HTTP 404 503 或 took too long to respond.
+
+检查OAuth应用 Authorization callback URL是否填写正确
+
+检查客户端与GitHub通讯是否正常，如不正常请尝试使用代理。
+
+### GitHub OAuth登录时出现GitHub界面的404
+
+检查Config.xml 或 Config.json 是否正确填写GitHub 处的 clientid
+
+### GitHub OAuth登录时出现浏览器HTTP 500
+
+检查Config.xml 或 Config.json 是否正确填写GitHub 处的 SecretKey
+
+### GitHub OAuth登录时出现HTTP 500
+
+检查Config.xml是否开启了GitHub OAuth.
+
+值为false关闭，为true开启，检查拼写是否正确。
+
+
+## 后端报错问题
 
 ### 后端Error: No third-part OAuth login options are enabled.
 
@@ -52,6 +107,15 @@ dotnet dev-certs https --trust
 ### 后端Error: The site is shared but HTTPS is not enabled.
 
 开启分享站点 需要开启HTTPS！
+
+
+## 其他问题
+
+### 如果你排除了上述问题，但问题仍然存在
+
+请检查是否已重启程序
+
+
 
 ###### 本系列文档遵循CC-BY-NC-SA-4.0协议 如需转载请遵循。
 
