@@ -58,7 +58,7 @@
 
 ### 微软OAuth登录后出现HTTP 500
 
-检查Config.xml或Config.json是否正确填写Microsoft 处的 Clientid.
+检查Config.xml或Config.json是否正确填写Microsoft 处的 SecretKey
 
 ### 微软OAuth登录时出现HTTP 500
 
