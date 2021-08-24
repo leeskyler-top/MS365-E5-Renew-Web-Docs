@@ -135,6 +135,7 @@ dotnet dev-certs https --trust
 
 请检查是否已重启程序。
 
+是否安装正确版本、正确架构的dotnet.
 
 
 ###### 本系列文档遵循CC-BY-NC-SA-4.0协议 如需转载请遵循。
