@@ -18,7 +18,7 @@ Dieses Dokument hat keine anderen Sprachen, nur vereinfachtes Chinesisch.
 
 ## 快速引导
 
-#### SundayRX的Microsoft E5 Renew系列CSDN博客页面
+#### SundayRX的MS365 E5 Renew系列CSDN博客页面
 
 - [csdn_blog](https://blog.csdn.net/qq_33212020/article/details/106837905)
 
