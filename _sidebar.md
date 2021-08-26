@@ -24,6 +24,8 @@
 
 - 使用文档
 
+  - [启动程序提示](Startup-help.md)
+
   - [管理员功能简介](program-help.md)
 
   - [更新与数据备份警示](update_and_backup-help.md)
