@@ -4,6 +4,10 @@
 
 #### 提供预览。
 
+#### 警告：由于jsdelivr掉了备案被间歇性屏蔽，我们更换了bootstrap5的CDN，为了再次防止CDN出事，我们在最新版提供了CDN外部链接更新接口，可按需更改，请注意Bootstrap版本必须是5.1.3。
+
+#### 警告：如果您所使用的的域名有备案，请务必按照填写网站备案部分。
+
 ~~~
 <?xml version="1.0" encoding="utf-8" ?>
 <Configuration>
@@ -15,10 +19,20 @@
 		<LoginPassword>12345678</LoginPassword>
 		<!--是否启用内核多线程支持-->
 		<CoreMultiThread>true</CoreMultiThread>
-		<!--网站备案号（选填）-->
-		<ICP></ICP>
-		<!--备案管理查询机构跳转链接（选填）-->
-		<ICPLink>https://beian.miit.gov.cn</ICPLink>
+		<!--网站备案（选填）-->
+		<ICP>
+			<!--备案显示文本-->
+			<Text></Text>
+			<!--备案管理查询机构跳转链接-->
+			<Link>https://beian.miit.gov.cn</Link>
+		</ICP>
+		<!--Bootstrap CDN 若要更改请务必使用bootstrap@5.1.3版本（选填）-->
+		<CDN>
+			<!--Bootstrap CSS文件CDN bootstrap.min.css-->
+			<CSS>https://cdn.staticfile.org/bootstrap/5.1.3/css/bootstrap.min.css</CSS>
+			<!--Bootstrap JS文件CDN bootstrap.bundle.min.js-->
+			<JS>https://cdn.staticfile.org/bootstrap/5.1.3/js/bootstrap.bundle.min.js</JS>
+		</CDN>
 	</Serivce>
 	<!--站点Kestrel服务器HTTPS配置 （只支持IIS证书类型 即PFX格式的证书）-->
 	<HTTPS>
@@ -42,6 +56,10 @@
 			<Password></Password>
 			<!--SMTP服务器地址-->
 			<Host></Host>
+			<!--SMTP服务器端口-->
+			<Port>587</Port>
+			<!--SMTP服务器是否使用SSL传输-->
+			<EnableSSL>true</EnableSSL>
 		</SMTP>
 		<!--第三方OAuth登录支持(至少启用以下一种OAuth否则其他用户无法注册)-->
 		<OAuth>
