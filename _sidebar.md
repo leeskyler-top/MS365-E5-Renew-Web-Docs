@@ -22,6 +22,10 @@
  
    - [Nginx反向代理](Nginx-help.md)
 
+- 部署文档（docker）
+
+   - [docker部署](docker-help.md)
+
 - 使用文档
 
   - [启动程序提示](Startup-help.md)
