@@ -1,6 +1,6 @@
 # docker快速部署
 
-docker由gladtbam提供。
+docker由[gladtbam](https://hub.docker.com/r/gladtbam/ms365_e5_renewx)提供。
 
 ## 支持版本
 
@@ -38,7 +38,7 @@ docker run -d \
     -p 1066:1066 \
     -v $PWD/Deploy:/renewx/Deploy \
     -v $PWD/appdata:/renewx/appdata \
-    --name RnewX \
+    --name RenewX \
 gladtbam/ms365_e5_renewx:latest
 ```
 
