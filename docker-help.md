@@ -24,7 +24,7 @@ docker由[gladtbam](https://hub.docker.com/r/gladtbam/ms365_e5_renewx)提供。
 ```
 docker run -d \
     -p 1066:1066 \
-    --name RnewX \
+    --name RenewX \
 gladtbam/ms365_e5_renewx:latest
 ```
 
