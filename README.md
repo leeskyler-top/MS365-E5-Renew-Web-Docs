@@ -29,7 +29,7 @@ Dieses Dokument hat keine anderen Sprachen, nur vereinfachtes Chinesisch.
 - [MS365 E5 Renew X & Web常见问题](Renew_Web-Questions)
 
 #### 部署文档
-- [dotnet3.1安装](dotnet-help-Home) | [systemd守护进程](systemd-help-Home) | [OAuth应用注册](App-registrations-help-Home) | [Config配置](Config-help) | [证书问题](pfx-help) | [Nginx反向代理](Nginx-help)
+- [dotnet3.1安装](dotnet-help-Home) | [systemd守护进程](systemd-help-Home) | [OAuth应用注册](App-registrations-help-Home) | [Config配置](Config-help) | [证书问题](pfx-help) | [Nginx反向代理](Nginx-help) | [docker部署](docker-help)
 
 
 ## 交流部
