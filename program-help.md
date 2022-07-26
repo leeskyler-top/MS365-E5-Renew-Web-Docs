@@ -95,8 +95,8 @@ https://api.github.com/users/你的昵称
 
 - SMTP回环，用于测试发信邮箱的发件情况，如果不正常，请见本文档 [常见问题->RenewX、Web相关问题->邮件收不到](https://docs-1.leeskyler.top/#/Renew_Web-Questions?id=%e9%82%ae%e4%bb%b6%e6%94%b6%e4%b8%8d%e5%88%b0)。
 
-##### 测试邮件主题：
-##### 测试邮件内容：
+##### 测试邮件主题：Microsoft365 E5 Renew X 的SMTP测试邮件
+##### 测试邮件内容：测试站点：foo 发信时间：YYYY-mm-dd HH:ii:ss UTC时区（服务器时区）
 
 ### 六、系统监视
 
